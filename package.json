@@ -35,7 +35,7 @@
     "@testing-library/react": "^16.3.0",
     "babel-jest": "^30.0.5",
     "component-image": "^2.1.1",
-    "jest": "^26.6.0",
+    "jest": "^30.0.5",
     "jest-image-snapshot": "^4.2.0",
     "microbundle": "^0.12.4",
     "react": "^19.0.0",
