@@ -39,7 +39,7 @@
     "jest-image-snapshot": "^6.5.1",
     "microbundle": "^0.15.1",
     "react": "^19.1.1",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.1.1"
   },
   "peerDependencies": {
     "react": "^19.0.0 || ^18.0.0 || ^17.0.0 || ^16.2.0",
