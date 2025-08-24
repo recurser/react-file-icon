@@ -37,7 +37,7 @@
     "component-image": "^2.1.1",
     "jest": "^30.0.5",
     "jest-image-snapshot": "^6.5.1",
-    "microbundle": "^0.12.4",
+    "microbundle": "^0.15.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
