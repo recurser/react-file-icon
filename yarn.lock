@@ -3210,7 +3210,7 @@ component-emitter@^1.2.1:
 
 component-image@^2.1.1:
   version "2.1.1"
-  resolved "https://registry.npmjs.org/component-image/-/component-image-2.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/component-image/-/component-image-2.1.1.tgz#2caa1ac2f6e9a15eb3396fa07ac0f10f239363f2"
   integrity sha512-llGfQAW3eOkODoIeHt+KfIL4WTwZt5vWrXsIlP+tRgfBTT3rEUZx0HcbVcoMDxzn6XLvC43oO5ySrNOr+aEnaQ==
   dependencies:
     lodash.merge "^4.6.1"
