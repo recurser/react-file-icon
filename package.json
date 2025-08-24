@@ -36,6 +36,7 @@
     "babel-jest": "^30.0.5",
     "component-image": "^2.1.1",
     "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
     "jest-image-snapshot": "^6.5.1",
     "microbundle": "^0.15.1",
     "react": "^19.1.1",
