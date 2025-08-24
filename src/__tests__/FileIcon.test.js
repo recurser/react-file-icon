@@ -9,6 +9,10 @@ expect.extend({ toMatchImageSnapshot });
 
 import { FileIcon, defaultStyles } from '../../dist/react-file-icon';
 
+const PUPPETEER_OPTIONS = {
+  args: ['--no-sandbox', '--disable-dev-shm-usage'],
+};
+
 const renderWithStyle = content => {
   return render(
     <div
@@ -237,6 +241,7 @@ describe('<FileIcon />', () => {
         width: 600,
         height: 160,
       },
+      puppeteerOptions: PUPPETEER_OPTIONS,
     });
     expect(image).toMatchImageSnapshot();
   });
@@ -258,6 +263,7 @@ describe('<FileIcon />', () => {
         width: 600,
         height: 160,
       },
+      puppeteerOptions: PUPPETEER_OPTIONS,
     });
     expect(image).toMatchImageSnapshot();
   });
@@ -286,6 +292,7 @@ describe('<FileIcon />', () => {
         width: 600,
         height: 160,
       },
+      puppeteerOptions: PUPPETEER_OPTIONS,
     });
     expect(image).toMatchImageSnapshot();
   });
@@ -307,9 +314,7 @@ describe('<FileIcon />', () => {
         width: 600,
         height: 160,
       },
-      puppeteerOptions: {
-        args: ['--no-sandbox', '--disable-dev-shm-usage'],
-      },
+      puppeteerOptions: PUPPETEER_OPTIONS,
     });
     expect(image).toMatchImageSnapshot();
   });
