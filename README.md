@@ -1,12 +1,32 @@
 # React File Icon
 
-[![npm version](https://img.shields.io/npm/v/react-file-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-file-icon)
-[![gh workflow](https://img.shields.io/github/workflow/status/corygibbons/react-file-icon/Test/master.svg?style=flat-square)](https://github.com/corygibbons/react-file-icon/actions?query=workflow%3ATest+branch%3Amaster)
+A React component to render beautiful svg file icons.
 
-[CodeSandbox demo](https://codesandbox.io/s/react-file-icon-hv4kh) with default icon styles.
+## Installation
+
+First, you'll need a GitHub Personal Access Token with `read:packages` scope. Create one at: [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+
+Then configure npm to use GitHub Packages by adding this to your project's `.npmrc`:
+
+```
+@recurser:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
+Replace `YOUR_GITHUB_TOKEN` with your actual token.
+
+Then install the package:
+
+```bash
+npm install @recurser/react-file-icon --save
+# or
+yarn add @recurser/react-file-icon
+```
+
+## Usage
 
 ```js
-import { FileIcon } from 'react-file-icon';
+import { FileIcon } from '@recurser/react-file-icon';
 ```
 
 ## Props
@@ -33,8 +53,17 @@ import { FileIcon } from 'react-file-icon';
 We also export an object of [default styles](https://github.com/corygibbons/react-file-icon/blob/master/src/defaultStyles.js) that can be used as a starting point when rendering icons. Object keys map to file extensions.
 
 ```js
-import { FileIcon, defaultStyles } from 'react-file-icon';
+import { FileIcon, defaultStyles } from '@recurser/react-file-icon';
 
 // Render a .docx icon with default styles
 <FileIcon extension="docx" {...defaultStyles.docx} />;
+```
+
+## Publishing a release
+
+```bash
+cp .npmrc.example .npmrc
+# Add your github token to .npmrc
+yarn build
+npm publish
 ```
